@@ -1,5 +1,36 @@
+:root {
+    /** Text colors */
+    --text-dark: #000000;
+    --text-light: #ffffff;
+
+    /** Highlight colors */
+    --hl-0: #8000ff;
+    --hl-1: #9436ff;
+    --hl-2: #a554ff;
+    --hl-3: #b56eff;
+    --hl-4: #c486ff;
+    --hl-5: #d29fff;
+
+    /** Background colors */
+    --bg-0: #121212;
+    --bg-1: #282828;
+    --bg-2: #3f3f3f;
+    --bg-3: #575757;
+    --bg-4: #717171;
+    --bg-5: #8b8b8b;
+
+    /** Tonal background colors */
+    --tonal-0: #1e1626;
+    --tonal-1: #332b3a;
+    --tonal-2: #494250;
+    --tonal-3: #615a67;
+    --tonal-4: #79737e;
+    --tonal-5: #928e97;
+}
+
 body {
     margin: 0;
-    background: pink;
+    background: var(--bg-0);
+    color: var(--text-light);
     text-align: center;
 }
