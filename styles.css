@@ -1,5 +1,71 @@
+:root {
+    /** Text colors */
+    --text-dark: #000000;
+    --text-light: #ffffff;
+
+    /** Highlight colors */
+    --hl-0: #8000ff;
+    --hl-1: #9436ff;
+    --hl-2: #a554ff;
+    --hl-3: #b56eff;
+    --hl-4: #c486ff;
+    --hl-5: #d29fff;
+
+    /** Background colors */
+    --bg-0: #121212;
+    --bg-1: #282828;
+    --bg-2: #3f3f3f;
+    --bg-3: #575757;
+    --bg-4: #717171;
+    --bg-5: #8b8b8b;
+
+    /** Tonal background colors */
+    --tonal-0: #1e1626;
+    --tonal-1: #332b3a;
+    --tonal-2: #494250;
+    --tonal-3: #615a67;
+    --tonal-4: #79737e;
+    --tonal-5: #928e97;
+}
+
 body {
     margin: 0;
-    background: pink;
+    background: var(--bg-0);
+    color: var(--text-light);
     text-align: center;
+
+    .top-bar {
+        background: var(--bg-1);
+        min-width: 580px;
+        overflow: hidden;
+    }
+    
+    /* Style the links inside the navigation bar */
+    .top-bar a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        float: right;
+        color: var(--text-light);
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        transition: background-color 0.3s ease;
+    }
+
+    .top-bar img {
+        max-height: 48px;
+        margin: 0px 20px;
+        float: left;
+    }
+    
+    /* Change the color of links on hover */
+    .top-bar a:hover {
+        background-color: var(--bg-2);
+    }
+    
+    /* Add a color to the active/current link */
+    .top-bar a.active {
+        background-color: var(--hl-0);
+    }
 }
